@@ -1,0 +1,209 @@
+/* Brand Colours */
+:root {
+  --color-bg: hsl(219deg 58% 95%);
+  --color-bg-footer: hsl(229deg 35% 34%);
+  --color-bg-nav: hsl(0deg 0% 100%);
+  --color-panel: hsl(0deg 0% 100%);
+  --color-text: hsl(233deg 26% 35%);
+  --color-text-footer: hsl(0deg 0% 100%);
+  --color-link: hsl(22deg 100% 45%);
+  --color-link-hover: hsl(22deg 100% 52%);
+  --color-button-bg: hsl(229deg 35% 34%);
+  --color-button-bg-hover: hsl(229deg 35% 30%);
+  --color-button-text: hsl(219deg 58% 95%);
+  --shadow: 0px 7px 20px hsl(0deg 0% 0% / 20%);
+  --border: 1px solid hsl(0deg 0% 84%);
+  --color-logo: hsl(233deg 26% 35%);
+  --color-logo-profile: hsl(0deg 0% 100%);
+  --color-selection-bg: hsl(22deg 100% 45%);
+  --color-selection-content: hsl(0, 0%, 100%);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: hsl(221deg 24% 21%);
+    --color-bg-footer: hsl(232deg 37% 15%);
+    --color-bg-nav: hsl(0deg 0% 100%);
+    --color-panel: hsl(229deg 23% 91%);
+    --color-text: hsl(229deg 23% 91%);
+    --color-text-footer: hsl(229deg 23% 91%);
+    --color-link: hsl(22deg 100% 45%);
+    --color-link-hover: hsl(22deg 100% 52%);
+    --color-button-bg: hsl(229deg 23% 91%);
+    --color-button-bg-hover: hsl(229deg 23% 95%);
+    --color-button-text: hsl(221deg 24% 21%);
+    --shadow: 0px 7px 20px hsl(0deg 0% 0% / 20%);
+    --border: 1px solid hsl(0deg 0% 84%);
+    --color-logo: hsl(229deg 23% 91%);
+    --color-logo-profile: hsl(229deg 23% 91%);
+    --color-selection-bg: hsl(22deg 100% 45%);
+    --color-selection-content: hsl(0, 0%, 100%);
+  }
+}
+/* Typography */
+:root {
+  --font: "Inter", sans-serif;
+  --font-h1: normal 900 44px/1.5em var(--font);
+  --font-h2: normal 900 40px/1.5em var(--font);
+  --font-h3: normal 900 36px/1.5em var(--font);
+  --font-h4: normal 900 32px/1.5em var(--font);
+  --font-h5: normal 900 28px/1.5em var(--font);
+  --font-h6: normal 900 24px/1.5em var(--font);
+  --font-nav: normal 500 17px/1.5em var(--font);
+  --font-li: normal 300 20px/1.5em var(--font);
+  --font-p: normal 300 20px/1.5em var(--font);
+  --font-a: normal 700 20px/1.5em var(--font);
+  --font-button: normal 700 20px/1.5em var(--font);
+  --font-bold: 900;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  :root {
+    --font-h1: normal 900 36px/1.5em var(--font);
+    --font-h2: normal 900 32px/1.5em var(--font);
+    --font-h3: normal 900 28px/1.5em var(--font);
+    --font-h4: normal 900 24px/1.5em var(--font);
+    --font-h5: normal 900 18px/1.5em var(--font);
+    --font-h6: normal 900 18px/1.5em var(--font);
+    --font-nav: normal 500 18px/1.5em var(--font);
+    --font-li: normal 300 18px/1.5em var(--font);
+    --font-p: normal 300 18px/1.5em var(--font);
+    --font-a: normal 700 18px/1.5em var(--font);
+  }
+}
+p {
+  font: var(--font-p);
+}
+
+h1 {
+  font: var(--font-h1);
+}
+
+h2 {
+  font: var(--font-h2);
+}
+
+h3 {
+  font: var(--font-h3);
+}
+
+h4 {
+  font: var(--font-h4);
+}
+
+h5 {
+  font: var(--font-h5);
+}
+
+h6 {
+  font: var(--font-h6);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+  color: var(--color-text);
+}
+
+li {
+  color: var(--color-li);
+  font: var(--font-li);
+  margin: 0px 0px 0px 0px;
+}
+
+a {
+  color: var(--color-link);
+  font: var(--font-a);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+a.button {
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
+  font: var(--font-button);
+  padding: 10px 20px;
+  margin: 11px 0px 0px 0px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a.button:hover {
+  background: var(--color-button-bg-hover);
+}
+
+strong {
+  font-weight: var(--font-bold);
+}
+
+::-moz-selection {
+  background: var(--color-selection-bg);
+  color: var(--color-selection-content);
+}
+
+::selection {
+  background: var(--color-selection-bg);
+  color: var(--color-selection-content);
+}
+
+::-moz-selection {
+  background: var(--color-selection-bg);
+  color: var(--color-selection-content);
+}
+
+/* Layout */
+body {
+  background: var(--color-bg);
+  margin: 0px;
+}
+
+main {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  main {
+    display: block;
+    width: unset;
+    height: unset;
+  }
+}
+section {
+  padding: 60px;
+  max-width: 80ch;
+  margin: auto;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  section {
+    padding: 25px;
+  }
+}
+/* Images */
+img.profile {
+  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
+  width: 100%;
+  background: var(--color-logo-profile);
+  max-width: 120px;
+  margin: 0px 0px 40px 0px;
+}
+
+/*# sourceMappingURL=matthewotten.css.map */
