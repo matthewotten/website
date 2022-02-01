@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Brand Colours */
 :root {
   --color-bg: hsl(219deg 58% 95%);
@@ -145,6 +146,11 @@ a.button:hover {
   background: var(--color-button-bg-hover);
 }
 
+a.button::after {
+  content: "›";
+  margin: 0px 0px 0px 10px;
+}
+
 strong {
   font-weight: var(--font-bold);
 }
@@ -205,5 +211,3 @@ img.profile {
   max-width: 120px;
   margin: 0px 0px 40px 0px;
 }
-
-/*# sourceMappingURL=matthewotten.css.map */
