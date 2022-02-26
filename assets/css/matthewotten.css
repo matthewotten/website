@@ -14,10 +14,12 @@
   --color-button-text: hsl(219deg 58% 95%);
   --shadow: 0px 7px 20px hsl(0deg 0% 0% / 20%);
   --border: 1px solid hsl(0deg 0% 84%);
+  --border-radius: 4px;
   --color-logo: hsl(233deg 26% 35%);
   --color-logo-profile: hsl(0deg 0% 100%);
   --color-selection-bg: hsl(22deg 100% 45%);
   --color-selection-content: hsl(0, 0%, 100%);
+  --color-focus: hsl(233deg 56% 35%);
 }
 
 /* Dark Mode */
@@ -36,10 +38,12 @@
     --color-button-text: hsl(221deg 24% 21%);
     --shadow: 0px 7px 20px hsl(0deg 0% 0% / 20%);
     --border: 1px solid hsl(0deg 0% 84%);
+    --border-radius: 4px;
     --color-logo: hsl(229deg 23% 91%);
     --color-logo-profile: hsl(229deg 23% 91%);
     --color-selection-bg: hsl(22deg 100% 45%);
     --color-selection-content: hsl(0, 0%, 100%);
+    --color-focus: hsl(229deg 53% 91%);
   }
 }
 /* Typography */
@@ -122,6 +126,11 @@ li {
   margin: 0px 0px 0px 0px;
 }
 
+strong {
+  font-weight: var(--font-bold);
+}
+
+/* Links & Buttons */
 a {
   color: var(--color-link);
   font: var(--font-a);
@@ -139,7 +148,7 @@ a.button {
   margin: 11px 0px 0px 0px;
   display: inline-block;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
 }
 
 a.button:hover {
@@ -151,26 +160,17 @@ a.button::after {
   margin: 0px 0px 0px 10px;
 }
 
-strong {
-  font-weight: var(--font-bold);
-}
-
-::-moz-selection {
-  background: var(--color-selection-bg);
-  color: var(--color-selection-content);
-}
-
-::selection {
-  background: var(--color-selection-bg);
-  color: var(--color-selection-content);
-}
-
-::-moz-selection {
-  background: var(--color-selection-bg);
-  color: var(--color-selection-content);
-}
-
 /* Layout */
+html {
+  font-size: 20px;
+}
+
+*:focus {
+  outline: solid 2px var(--color-focus);
+  border-radius: var(--border-radius);
+  outline-offset: 4px;
+}
+
 body {
   background: var(--color-bg);
   margin: 0px;
@@ -184,6 +184,10 @@ main {
   justify-content: center;
 }
 
+section {
+  max-width: 65ch;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   main {
     display: block;
@@ -193,7 +197,6 @@ main {
 }
 section {
   padding: 60px;
-  max-width: 80ch;
   margin: auto;
 }
 
@@ -211,3 +214,5 @@ img.profile {
   max-width: 120px;
   margin: 0px 0px 40px 0px;
 }
+
+/*# sourceMappingURL=matthewotten.css.map */
