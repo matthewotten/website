@@ -229,6 +229,20 @@ a.button + a.button {
   margin-left: 1rem;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h1.headline {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  a.button {
+    padding: 0.3rem 0.5rem;
+  }
+
+  a.button + a.button {
+    margin-left: 0.5rem;
+  }
+}
 /* Layout */
 html {
   font-size: 20px;
@@ -365,19 +379,6 @@ footer div p:last-of-type * {
 
   main section#intro {
     padding: 0rem 1rem 1rem;
-  }
-
-  h1.headline {
-    font-size: 1.5rem;
-    margin-bottom: 0.6rem;
-  }
-
-  a.button {
-    padding: 0.3rem 0.5rem;
-  }
-
-  a.button + a.button {
-    margin-left: 0.5rem;
   }
 
   main section.edge-to-edge {
