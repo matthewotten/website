@@ -1,65 +1,73 @@
 @charset "UTF-8";
 /* Brand Colours */
 :root {
-  --color-bg: hsl(219deg 58% 95%);
-  --color-bg-footer: hsl(229deg 35% 34%);
-  --color-bg-nav: hsl(0deg 0% 100%);
-  --color-panel: hsl(0deg 0% 100%);
-  --color-text: hsl(233deg 26% 35%);
-  --color-text-footer: hsl(0deg 0% 100%);
-  --color-link: hsl(22deg 100% 45%);
-  --color-link-hover: hsl(22deg 100% 52%);
-  --color-button-bg: hsl(229deg 35% 34%);
-  --color-button-bg-hover: hsl(229deg 35% 30%);
-  --color-button-text: hsl(219deg 58% 95%);
-  --shadow: 0px 7px 20px hsl(0deg 0% 0% / 20%);
-  --border: 1px solid hsl(0deg 0% 84%);
-  --border-radius: 4px;
-  --color-logo: hsl(233deg 26% 35%);
-  --color-logo-profile: hsl(0deg 0% 100%);
-  --color-selection-bg: hsl(22deg 100% 45%);
-  --color-selection-content: hsl(0, 0%, 100%);
-  --color-focus: hsl(233deg 56% 35%);
+  --bg: hsla(219, 58%, 95%, 1);
+  --text: hsla(233, 26%, 35%, 1);
+  --portfolio-bg: hsla(220, 40%, 89%, 1);
+  --portfolio-entry-bg: hsla(222, 50%, 96%, 1);
+  --portfolio-entry-shadow: hsla(222, 15%, 24%, 1);
+  --footer-bg: hsla(229, 35%, 34%, 1);
+  --footer-text: hsla(0, 0%, 100%, 1);
+  --link: hsla(233, 26%, 35%, 1);
+  --link-hover: hsla(233, 26%, 35%, 1);
+  --button-bg: hsla(229, 35%, 34%, 1);
+  --button-bg-hover: hsla(229, 35%, 30%, 1);
+  --button-text: hsla(219, 58%, 95%, 1);
+  --button-secondary-bg: hsla(217, 41%, 88%, 0.6);
+  --button-secondary-bg-hover: hsla(217, 41%, 88%, 0.9);
+  --button-secondary-text: hsla(233, 26%, 35%, 1);
+  --button-ghost-bg: hsla(217, 41%, 88%, 0);
+  --button-ghost-bg-hover: hsla(217, 41%, 88%, 0.9);
+  --button-ghost-text: hsla(233, 26%, 35%, 1);
+  --logo: hsla(233, 26%, 35%, 1);
+  --logo-profile: hsla(0, 0%, 100%, 1);
+  --shadow: 0px 7px 20px hsla(0, 0%, 0%, 0.2);
+  --border: 1px solid hsla(0, 0%, 84%, 1);
+  --border-radius: 0.6rem;
 }
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: hsl(221deg 24% 21%);
-    --color-bg-footer: hsl(232deg 37% 15%);
-    --color-bg-nav: hsl(0deg 0% 100%);
-    --color-panel: hsl(229deg 23% 91%);
-    --color-text: hsl(229deg 23% 91%);
-    --color-text-footer: hsl(229deg 23% 91%);
-    --color-link: hsl(22deg 100% 45%);
-    --color-link-hover: hsl(22deg 100% 52%);
-    --color-button-bg: hsl(229deg 23% 91%);
-    --color-button-bg-hover: hsl(229deg 23% 95%);
-    --color-button-text: hsl(221deg 24% 21%);
-    --shadow: 0px 7px 20px hsl(0deg 0% 0% / 20%);
-    --border: 1px solid hsl(0deg 0% 84%);
-    --border-radius: 4px;
-    --color-logo: hsl(229deg 23% 91%);
-    --color-logo-profile: hsl(229deg 23% 91%);
-    --color-selection-bg: hsl(22deg 100% 45%);
-    --color-selection-content: hsl(0, 0%, 100%);
-    --color-focus: hsl(229deg 53% 91%);
+    --bg: hsla(221, 24%, 21%, 1);
+    --text: hsla(229, 23%, 91%, 1);
+    --portfolio-bg: hsla(220, 34%, 19%, 1);
+    --portfolio-entry-bg: hsla(222, 15%, 36%, 1);
+    --portfolio-entry-shadow: hsla(222, 50%, 96%, 1);
+    --footer-bg: hsla(232, 37%, 15%, 1);
+    --footer-text: hsla(229, 23%, 91%, 1);
+    --link: hsla(229, 23%, 91%, 1);
+    --link-hover: hsla(229, 23%, 91%, 1);
+    --button-bg: hsla(229, 23%, 91%, 1);
+    --button-bg-hover: hsla(229, 23%, 95%, 1);
+    --button-text: hsla(221, 24%, 21%, 1);
+    --button-secondary-bg: hsla(217, 21%, 38%, 0.6);
+    --button-secondary-bg-hover: hsla(217, 41%, 88%, 0.7);
+    --button-secondary-text: hsla(233, 26%, 100%, 1);
+    --button-ghost-bg: hsla(217, 21%, 38%, 0);
+    --button-ghost-bg-hover: hsla(217, 41%, 88%, 0.3);
+    --button-ghost-text: hsla(233, 26%, 100%, 1);
+    --logo: hsla(229, 23%, 91%, 1);
+    --logo-profile: hsla(229, 23%, 91%, 1);
+    --shadow: 0px 7px 20px hsla(0, 0%, 0%, 0.2);
+    --border: 1px solid hsla(0, 0%, 84%, 1);
+    --border-radius: 0.6rem;
   }
 }
 /* Typography */
 :root {
-  --font: "Inter", sans-serif;
-  --font-h1: normal 900 44px/1.5em var(--font);
-  --font-h2: normal 900 40px/1.5em var(--font);
-  --font-h3: normal 900 36px/1.5em var(--font);
-  --font-h4: normal 900 32px/1.5em var(--font);
-  --font-h5: normal 900 28px/1.5em var(--font);
-  --font-h6: normal 900 24px/1.5em var(--font);
-  --font-nav: normal 500 17px/1.5em var(--font);
-  --font-li: normal 300 20px/1.5em var(--font);
-  --font-p: normal 300 20px/1.5em var(--font);
-  --font-a: normal 700 20px/1.5em var(--font);
-  --font-button: normal 700 20px/1.5em var(--font);
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --font-h1: normal 900 2.25rem/1.5rem var(--font);
+  --font-h2: normal 900 2rem/1.5rem var(--font);
+  --font-h3: normal 900 1.8rem/1.5rem var(--font);
+  --font-h4: normal 900 1.6rem/1.5rem var(--font);
+  --font-h5: normal 900 1.4rem/1.5rem var(--font);
+  --font-h6: normal 900 1.2rem/1.5rem var(--font);
+  --font-nav: normal 500 1rem/1.5rem var(--font);
+  --font-li: normal 300 1rem/1.5rem var(--font);
+  --font-p: normal 300 1rem/1.5rem var(--font);
+  --font-a: normal 700 1rem/1.5rem var(--font);
+  --font-button: normal 700 20px/1.5rem var(--font);
   --font-bold: 900;
 }
 
@@ -106,6 +114,7 @@ h6 {
 }
 
 p,
+a,
 h1,
 h2,
 h3,
@@ -116,12 +125,52 @@ li {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   text-align: left;
-  margin: 0px 0px 20px 0px;
-  color: var(--color-text);
+  margin-bottom: 1rem;
+  color: var(--text);
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+h1 {
+  margin-bottom: 1.9rem;
+}
+h1.headline {
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 1.8rem;
+}
+
+h3 {
+  margin-bottom: 1.6rem;
+}
+
+h4 {
+  margin-bottom: 1.4rem;
+}
+
+h5 {
+  margin-bottom: 1.1rem;
+}
+
+h6 {
+  margin-bottom: 1rem;
+}
+
+p,
+a {
+  margin-bottom: 1.6rem;
+}
+
+ul,
+ol {
+  margin-block-start: 0rem;
+  margin-block-end: 1.6rem;
+  padding-inline-start: 1rem;
 }
 
 li {
-  color: var(--color-li);
   font: var(--font-li);
   margin: 0px 0px 0px 0px;
 }
@@ -132,32 +181,52 @@ strong {
 
 /* Links & Buttons */
 a {
-  color: var(--color-link);
+  color: var(--link);
   font: var(--font-a);
+  border-radius: var(--border-radius);
 }
-
 a:hover {
-  color: var(--color-link-hover);
+  color: var(--link-hover);
 }
 
 a.button {
-  background: var(--color-button-bg);
-  color: var(--color-button-text);
+  background: var(--button-bg);
+  color: var(--button-text);
   font: var(--font-button);
-  padding: 10px 20px;
-  margin: 11px 0px 0px 0px;
+  padding: 0.5rem 1rem;
+  margin: 0rem 0rem 1rem 0rem;
   display: inline-block;
   text-decoration: none;
-  border-radius: var(--border-radius);
 }
-
-a.button:hover {
-  background: var(--color-button-bg-hover);
+a.button:hover, a.button:focus {
+  background: var(--button-bg-hover);
 }
-
 a.button::after {
   content: "›";
-  margin: 0px 0px 0px 10px;
+  margin-left: 0.5rem;
+}
+
+a.button--secondary {
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+}
+a.button--secondary:hover, a.button--secondary:focus {
+  background: var(--button-secondary-bg-hover);
+}
+
+a.button--ghost {
+  background: var(--button-ghost-bg);
+  color: var(--button-ghost-text);
+  transition-property: background;
+  transition-duration: 0.5s;
+}
+a.button--ghost:hover, a.button--ghost:focus {
+  background: var(--button-ghost-bg-hover);
+  transition-duration: 0.2s;
+}
+
+a.button + a.button {
+  margin-left: 1rem;
 }
 
 /* Layout */
@@ -166,53 +235,123 @@ html {
 }
 
 *:focus {
-  outline: solid 2px var(--color-focus);
-  border-radius: var(--border-radius);
-  outline-offset: 4px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0.2rem;
 }
 
 body {
-  background: var(--color-bg);
+  background: var(--bg);
   margin: 0px;
 }
 
-main {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  align-content: center;
-  justify-content: center;
-}
-
-section {
-  max-width: 65ch;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  main {
-    display: block;
-    width: unset;
-    height: unset;
-  }
-}
-section {
-  padding: 60px;
+header {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 900px;
   margin: auto;
+  justify-content: space-between;
 }
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  section {
-    padding: 25px;
-  }
+header div.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-/* Images */
-img.profile {
+header div.logo p.logo__text {
+  margin: unset;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+header div.logo img.logo__image {
+  width: 4rem;
+  height: 4rem;
   clip-path: circle(50% at 50% 50%);
   border-radius: 50%;
+  background: var(--logo-profile);
+  margin-right: 1rem;
+}
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  padding-inline-start: unset;
+  margin: 0px;
+}
+header nav ul li {
+  font: var(--font-li);
+  margin: 0px 0px 0px 0px;
+  list-style-type: none;
+}
+
+main {
+  margin: auto;
+}
+main section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+main section#intro {
+  padding: 1rem 2rem 3rem 2rem;
+}
+main section.edge-to-edge {
+  background: var(--portfolio-bg);
   width: 100%;
-  background: var(--color-logo-profile);
-  max-width: 120px;
-  margin: 0px 0px 40px 0px;
+  padding: 3rem;
+  width: calc(100vw - 6rem);
+  margin-left: calc(50% - 50vw);
+  max-width: unset;
+}
+main section.edge-to-edge > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.portfolio {
+  list-style-type: none;
+  padding: 0rem;
+  display: grid;
+  grid: auto/repeat(1, 1fr);
+  gap: 2rem;
+  margin-block-end: 0px;
+}
+ul.portfolio li {
+  margin-bottom: 2rem;
+}
+ul.portfolio li figure {
+  margin-block: unset;
+  margin-inline: unset;
+}
+ul.portfolio li figure img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--portfolio-entry-bg);
+  margin: 0rem 0rem 1rem 0rem;
+  height: auto;
+}
+ul.portfolio li p:last-of-type {
+  margin: 0rem;
+}
+
+footer {
+  background: var(--footer-bg);
+}
+footer div {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+footer div * {
+  text-align: center;
+}
+footer div p:last-of-type {
+  margin: 0rem;
+  color: var(--footer-text);
+}
+footer div p:last-of-type * {
+  color: var(--footer-text);
 }
 
 /*# sourceMappingURL=matthewotten.css.map */
