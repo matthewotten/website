@@ -1,9 +1,10 @@
 @charset "UTF-8";
 /* Brand Colours */
 :root {
-  --bg: hsla(219, 58%, 95%, 1);
-  --text: hsla(233, 26%, 35%, 1);
-  --portfolio-bg: hsla(220, 40%, 89%, 1);
+  --bg: hsla(222, 58%, 95%, 1);
+  --type-colour-hero: hsla(233, 26%, 35%, 1);
+  --type-colour-body: hsla(233, 26%, 35%, 1);
+  --portfolio-bg: hsla(222, 52%, 91%, 1);
   --portfolio-entry-bg: hsla(222, 50%, 96%, 1);
   --portfolio-entry-shadow: hsla(222, 15%, 24%, 1);
   --footer-bg: hsla(229, 35%, 34%, 1);
@@ -30,8 +31,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: hsla(221, 24%, 21%, 1);
-    --text: hsla(229, 23%, 91%, 1);
-    --portfolio-bg: hsla(220, 34%, 19%, 1);
+    --type-colour-hero:hsla(229, 23%, 91%, 1);
+    --type-colour-body: hsla(229, 23%, 91%, 1);
+    --portfolio-bg: hsla(222, 28%, 18%, 1);
     --portfolio-entry-bg: hsla(222, 15%, 36%, 1);
     --portfolio-entry-shadow: hsla(222, 50%, 96%, 1);
     --footer-bg: hsla(232, 37%, 15%, 1);
@@ -56,79 +58,93 @@
 }
 /* Typography */
 :root {
-  --font: "campaign", ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
-  --font-h1: normal 900 2.25rem/1.5rem var(--font);
-  --font-h2: normal 900 2rem/1.5rem var(--font);
-  --font-h3: normal 900 1.8rem/1.5rem var(--font);
-  --font-h4: normal 900 1.6rem/1.5rem var(--font);
-  --font-h5: normal 900 1.4rem/1.5rem var(--font);
-  --font-h6: normal 900 1.2rem/1.5rem var(--font);
-  --font-nav: normal 500 1rem/1.5rem var(--font);
-  --font-li: normal 300 1rem/1.5rem var(--font);
-  --font-p: normal 300 1rem/1.5rem var(--font);
-  --font-a: normal 700 1rem/1.5rem var(--font);
-  --font-button: normal 700 20px/1.5rem var(--font);
-  --font-bold: 900;
+  --type-font-hero: "campaign", ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --type-font-body: "proxima-nova", ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --type-font-h1: normal 900 2.25rem/1.5rem var(--type-font-hero);
+  --type-font-h2: normal 900 2rem/1.5rem var(--type-font-hero);
+  --type-font-h3: normal 900 1.8rem/1.5rem var(--type-font-hero);
+  --type-font-h4: normal 900 1.6rem/1.5rem var(--type-font-hero);
+  --type-font-h5: normal 900 1.4rem/1.5rem var(--type-font-hero);
+  --type-font-h6: normal 900 1.2rem/1.5rem var(--type-font-hero);
+  --type-font-nav: normal 500 1rem/1.5rem var(--type-font-body);
+  --type-font-li: normal 300 1rem/1.5rem var(--type-font-body);
+  --type-font-p: normal 300 1rem/1.5rem var(--type-font-body);
+  --type-font-a: normal 700 1rem/1.5rem var(--type-font-body);
+  --type-font-button: normal 700 20px/1.5rem var(--type-font-hero);
+  --type-font-bold: 900;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   :root {
-    --font-h1: normal 900 36px/1.5em var(--font);
-    --font-h2: normal 900 32px/1.5em var(--font);
-    --font-h3: normal 900 28px/1.5em var(--font);
-    --font-h4: normal 900 24px/1.5em var(--font);
-    --font-h5: normal 900 18px/1.5em var(--font);
-    --font-h6: normal 900 18px/1.5em var(--font);
-    --font-nav: normal 500 18px/1.5em var(--font);
-    --font-li: normal 300 18px/1.5em var(--font);
-    --font-p: normal 300 18px/1.5em var(--font);
-    --font-a: normal 700 18px/1.5em var(--font);
+    --type-font-h1: normal 900 36px/1.5em var(--type-font-hero);
+    --type-font-h2: normal 900 32px/1.5em var(--type-font-hero);
+    --type-font-h3: normal 900 28px/1.5em var(--type-font-hero);
+    --type-font-h4: normal 900 24px/1.5em var(--type-font-hero);
+    --type-font-h5: normal 900 18px/1.5em var(--type-font-hero);
+    --type-font-h6: normal 900 18px/1.5em var(--type-font-hero);
+    --type-font-nav: normal 500 18px/1.5em var(--type-font-body);
+    --type-font-li: normal 300 18px/1.5em var(--type-font-body);
+    --type-font-p: normal 300 18px/1.5em var(--type-font-body);
+    --type-font-a: normal 700 18px/1.5em var(--type-font-body);
   }
 }
 p {
-  font: var(--font-p);
+  font: var(--type-font-p);
 }
 
 h1 {
-  font: var(--font-h1);
+  font: var(--type-font-h1);
 }
 
 h2 {
-  font: var(--font-h2);
+  font: var(--type-font-h2);
 }
 
 h3 {
-  font: var(--font-h3);
+  font: var(--type-font-h3);
 }
 
 h4 {
-  font: var(--font-h4);
+  font: var(--type-font-h4);
 }
 
 h5 {
-  font: var(--font-h5);
+  font: var(--type-font-h5);
 }
 
 h6 {
-  font: var(--font-h6);
+  font: var(--type-font-h6);
 }
 
-p,
-a,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--type-colour-hero);
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+}
+
+p,
+a,
 li {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   text-align: left;
   margin-bottom: 1rem;
-  color: var(--text);
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
+  color: var(--type-colour-body);
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
 }
 
 h1 {
@@ -165,24 +181,27 @@ a {
 
 ul,
 ol {
-  margin-block-start: 0rem;
-  margin-block-end: 1.6rem;
-  padding-inline-start: 1rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 1.6rem;
+          margin-block-end: 1.6rem;
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
 }
 
 li {
-  font: var(--font-li);
+  font: var(--type-font-li);
   margin: 0px 0px 0px 0px;
 }
 
 strong {
-  font-weight: var(--font-bold);
+  font-weight: var(--type-font-bold);
 }
 
 /* Links & Buttons */
 a {
   color: var(--link);
-  font: var(--font-a);
+  font: var(--type-font-a);
   border-radius: var(--border-radius);
 }
 a:hover {
@@ -192,7 +211,7 @@ a:hover {
 a.button {
   background: var(--button-bg);
   color: var(--button-text);
-  font: var(--font-button);
+  font: var(--type-font-button);
   padding: 0.5rem 1rem;
   margin: 0rem 0rem 1rem 0rem;
   display: inline-block;
@@ -234,18 +253,16 @@ a.button + a.button {
     font-size: 1.5rem;
     margin-bottom: 0.6rem;
   }
-
   a.button {
     padding: 0.3rem 0.5rem;
   }
-
   a.button + a.button {
     margin-left: 0.5rem;
   }
 }
 /* Layout */
 html {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 *:focus {
@@ -281,7 +298,8 @@ header div.logo p.logo__text {
 header div.logo img.logo__image {
   width: 4rem;
   height: 4rem;
-  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
   border-radius: 50%;
   background: var(--logo-profile);
   margin-right: 1rem;
@@ -289,7 +307,8 @@ header div.logo img.logo__image {
 header nav ul {
   display: flex;
   gap: 1rem;
-  padding-inline-start: unset;
+  -webkit-padding-start: unset;
+          padding-inline-start: unset;
   margin: 0px;
 }
 header nav ul li {
@@ -329,7 +348,8 @@ ul.portfolio {
   display: grid;
   grid: auto/repeat(1, 1fr);
   gap: 2rem;
-  margin-block-end: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
 }
 ul.portfolio li {
   margin-bottom: 2rem;
@@ -372,23 +392,17 @@ footer div p:last-of-type * {
   html {
     font-size: 18px;
   }
-
   header {
     padding: 1rem;
   }
-
   main section#intro {
     padding: 0rem 1rem 1rem;
   }
-
   main section.edge-to-edge {
     padding: 1rem;
     width: calc(100vw - 2rem);
   }
-
   ul.portfolio li {
     margin-bottom: 1rem;
   }
-}
-
-/*# sourceMappingURL=matthewotten.css.map */
+}/*# sourceMappingURL=matthewotten.css.map */
