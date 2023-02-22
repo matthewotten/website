@@ -528,6 +528,11 @@ section#intro p:last-of-type {
   section#intro {
     padding: 1rem 1.5rem 4rem;
   }
+  #portfolio h2 {
+    margin-bottom: 1.8rem;
+    line-height: normal;
+    font-size: 1.6rem;
+  }
   ul.portfolio li {
     margin-bottom: 1rem;
   }
