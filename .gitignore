@@ -2,5 +2,6 @@
 assets/css/partials/**
 assets/css/matthewotten.scss
 assets/css/matthewotten.css.map
+assets/scripts/matthewotten.js
 style.html
 **/.DS_Store
